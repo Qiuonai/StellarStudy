@@ -3,1173 +3,1273 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0a1228">
-
-<title>Stellar Study Abroad — Study Abroad Consultation & IELTS / DET / SAT Coaching</title>
-
-<meta name="description" content="Stellar Study Abroad is a boutique international education studio offering IELTS, DET and SAT coaching alongside end-to-end university admissions guidance for the USA, UK, Canada, Germany, Finland, Ireland, Italy, Romania and Bulgaria.">
-<meta name="keywords" content="study abroad consultation, IELTS coaching, DET coaching, SAT coaching, SAT preparation, Duolingo English Test, study in USA, study in UK, study in Canada, study in Germany, study in Finland, study in Ireland, study in Italy, study in Romania, study in Bulgaria, university admissions, SOP writing, scholarship assistance, visa documentation">
-<meta name="author" content="Stellar Study Abroad">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://stellarstudy.vercel.app/">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Stellar Study Abroad — International Education Studio">
-<meta property="og:description" content="IELTS, DET & SAT coaching and university admissions guidance across nine countries.">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Stellar Study Abroad",
-  "description": "Boutique study abroad consultation and IELTS, DET & SAT coaching studio.",
-  "url": "https://stellarstudyabroad.com/",
-  "areaServed": ["United States","United Kingdom","Canada","Germany","Finland","Ireland","Italy","Romania","Bulgaria"],
-  "serviceType": ["Study abroad consultation","IELTS coaching","DET coaching","SAT coaching","University admissions guidance","Visa documentation","Scholarship strategy"]
-}
-</script>
-
+<title>Stellar Study Abroad | IELTS & DET Coaching, University Admissions USA UK Canada Germany</title>
+<meta name="description" content="Premium study abroad consultation and IELTS/DET coaching. Get admitted to top universities in USA, UK, Canada, Germany, Finland, Ireland, Italy, Hungary, and Romania with Stellar Study Abroad.">
+<meta name="keywords" content="study abroad, IELTS coaching, DET coaching, Duolingo English Test, study in USA, study in UK, study in Canada, study in Germany, study in Finland, study in Ireland, study in Italy, study in Hungary, study in Romania, university admissions, study abroad consultation, scholarship guidance">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.13/dist/lenis.min.js"></script>
-
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
-:root{
-  --midnight:#0a1228;
-  --navy-deep:#0d1b3d;
-  --navy:#142a5c;
-  --purple-haze:#5b3a8c;
-  --purple-soft:#7c5ba8;
-  --gold-star:#f5b840;
-  --gold-soft:#ffd166;
-  --parchment:#f5f1ea;
-  --pure-white:#ffffff;
-  --soft-black:#1a1a1a;
-  --ease-quiet:cubic-bezier(.22,1,.36,1);
-  --ease-precise:cubic-bezier(.4,0,.2,1);
-  --ease-emphasis:cubic-bezier(.16,1,.3,1);
-  --font-display:'Fraunces',Georgia,serif;
-  --font-sans:'Manrope',-apple-system,sans-serif;
-  --font-mono:'JetBrains Mono',monospace;
+:root {
+  --bg-deep: #060818;
+  --bg-mid: #0d1233;
+  --bg-elev: #161b3d;
+  --purple: #8b5cf6;
+  --purple-deep: #6d28d9;
+  --purple-light: #c4b5fd;
+  --gold: #fbbf24;
+  --gold-light: #fcd34d;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --border: rgba(139, 92, 246, 0.18);
 }
-*{margin:0;padding:0;box-sizing:border-box}
-html{overflow-x:clip}
-body{
-  font-family:var(--font-sans);
-  background:var(--midnight);
-  color:var(--parchment);
-  font-weight:400;
-  line-height:1.5;
-  overflow-x:clip;
-  -webkit-font-smoothing:antialiased;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg-deep);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-
-/* ===== Loader ===== */
-.loader{
-  position:fixed;inset:0;z-index:9999;
-  background:var(--midnight);
-  display:flex;align-items:center;justify-content:center;
-  flex-direction:column;gap:1.5rem;
-  transition:opacity .8s var(--ease-quiet),visibility .8s var(--ease-quiet);
+.font-display { font-family: 'Fraunces', serif; }
+.gradient-text {
+  background: linear-gradient(135deg, #fcd34d 0%, #c4b5fd 50%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.loader.is-out{opacity:0;visibility:hidden}
-.loader__mark{
-  font-family:var(--font-display);
-  font-size:clamp(2rem,6vw,3.5rem);
-  color:var(--pure-white);
-  font-weight:400;
-  letter-spacing:.05em;
-  position:relative;
+.gold-text {
+  background: linear-gradient(135deg, #fcd34d 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.loader__mark::after{
-  content:'✦';
-  color:var(--gold-star);
-  font-size:.4em;
-  position:absolute;top:.3em;right:-.6em;
-  animation:twinkle 2s var(--ease-quiet) infinite;
+#starfield {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
-.loader__sub{
-  font-family:var(--font-mono);
-  font-size:.65rem;
-  letter-spacing:.3em;
-  text-transform:uppercase;
-  color:var(--purple-soft);
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 }
-@keyframes twinkle{0%,100%{opacity:.3;transform:scale(.9)}50%{opacity:1;transform:scale(1.1)}}
-
-/* ===== Nav ===== */
-.nav{
-  position:fixed;top:0;left:0;right:0;
-  z-index:100;
-  padding:1.25rem 2.5rem;
-  display:flex;align-items:center;justify-content:space-between;
-  backdrop-filter:blur(20px) saturate(140%);
-  background:rgba(10,18,40,.4);
-  border-bottom:1px solid rgba(245,241,234,.06);
-  transition:background .4s var(--ease-quiet),padding .4s var(--ease-quiet);
+.reveal.in { opacity: 1; transform: translateY(0); }
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
 }
-.nav.is-scrolled{background:rgba(10,18,40,.88);padding:.9rem 2.5rem}
-.nav__brand{display:flex;align-items:center;gap:.85rem;color:var(--pure-white)}
-.nav__logo{
-  height:40px;width:auto;object-fit:contain;
-  filter:drop-shadow(0 0 6px rgba(245,184,64,.15)) brightness(1.15);
+.lift {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
-.nav__brand-text{display:flex;flex-direction:column;line-height:1}
-.nav__name{font-family:var(--font-display);font-size:1.35rem;font-weight:500;letter-spacing:.02em;color:var(--pure-white)}
-.nav__sub{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--purple-soft);margin-top:4px}
-.nav__links{display:flex;gap:2.5rem;list-style:none}
-.nav__links a{
-  color:var(--parchment);font-size:.82rem;letter-spacing:.05em;
-  transition:transform .3s var(--ease-quiet),color .3s var(--ease-quiet);
-  display:inline-block;position:relative;
+.lift:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139, 92, 246, 0.45);
+  box-shadow: 0 30px 60px -20px rgba(139, 92, 246, 0.25);
 }
-.nav__links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold-star);transition:width .4s var(--ease-quiet)}
-.nav__links a:hover{transform:translateX(4px);color:var(--gold-soft)}
-.nav__links a:hover::after{width:100%}
-.nav__cta{
-  padding:.7rem 1.4rem;border:1px solid var(--gold-star);color:var(--gold-star);
-  font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
-  transition:background .3s var(--ease-quiet),color .3s var(--ease-quiet);
-  display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-mono);
+.btn-primary {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.nav__cta:hover{background:var(--gold-star);color:var(--midnight)}
-.nav__cta::after{content:'→';transition:transform .3s var(--ease-quiet)}
-.nav__cta:hover::after{transform:translate(.2em,-.2em)}
-@media (max-width:880px){.nav__links{display:none}.nav{padding:.9rem 1.25rem}.nav__logo{height:32px}.nav__brand-text{display:none}}
-
-/* ===== Hero ===== */
-.hero{
-  position:sticky;top:0;
-  height:100vh;min-height:720px;
-  overflow:hidden;
-  background:linear-gradient(180deg,var(--midnight) 0%,var(--navy-deep) 100%);
-  z-index:1;
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-.hero__noise{
-  position:absolute;inset:0;opacity:.35;mix-blend-mode:overlay;pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary span { position: relative; z-index: 1; }
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -10px rgba(251, 191, 36, 0.4);
 }
-.hero__stars{position:absolute;inset:0;pointer-events:none;z-index:1}
-.hero__star{position:absolute;color:var(--gold-star);animation:twinkle 4s var(--ease-quiet) infinite}
-.hero__star--1{top:18%;left:8%;font-size:.6rem;animation-delay:0s}
-.hero__star--2{top:30%;left:22%;font-size:.4rem;animation-delay:1.2s}
-.hero__star--3{top:65%;left:12%;font-size:.5rem;animation-delay:2.4s}
-.hero__star--4{top:22%;left:55%;font-size:.7rem;animation-delay:.6s}
-.hero__star--5{top:55%;left:48%;font-size:.35rem;animation-delay:1.8s}
-.hero__star--6{top:78%;left:42%;font-size:.5rem;animation-delay:3s}
-
-.hero__bigtext{
-  position:absolute;bottom:-3vw;left:50%;transform:translateX(-50%);
-  font-family:var(--font-display);font-size:clamp(8rem,22vw,24rem);font-weight:400;
-  color:var(--pure-white);letter-spacing:-.04em;line-height:.85;opacity:.045;
-  white-space:nowrap;pointer-events:none;z-index:1;
+.country-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.hero__portrait{
-  position:absolute;right:6vw;top:50%;transform:translateY(-50%);
-  width:32vw;max-width:460px;min-width:280px;aspect-ratio:3/4;overflow:hidden;
-  border-radius:3px;box-shadow:0 30px 80px rgba(0,0,0,.6);z-index:2;
+.country-card::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
-.hero__portrait img{width:100%;height:100%;object-fit:cover;filter:brightness(.85) saturate(.9) contrast(1.05)}
-.hero__portrait::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,18,40,.6) 100%);pointer-events:none}
-.hero__portrait-tag{
-  position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;
-  display:flex;justify-content:space-between;align-items:flex-end;
-  font-family:var(--font-mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;
-  color:rgba(245,241,234,.85);z-index:3;
+.country-card:hover::before { opacity: 1; }
+.country-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(251, 191, 36, 0.4);
 }
-.hero__portrait-tag span:last-child{color:var(--gold-star)}
-@media (max-width:880px){.hero__portrait{display:none}}
-
-.hero__content{
-  position:relative;z-index:3;max-width:1400px;margin:0 auto;
-  padding:8rem 2.5rem 4rem;height:100%;
-  display:flex;flex-direction:column;justify-content:center;
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
 }
-.hero__eyebrow{
-  display:inline-flex;align-items:center;gap:.75rem;
-  font-family:var(--font-mono);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;
-  color:var(--gold-star);margin-bottom:2rem;
+.float { animation: float 6s ease-in-out infinite; }
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(251, 191, 36, 0); }
 }
-.hero__eyebrow::before{content:'';width:2.5rem;height:1px;background:var(--gold-star)}
-.hero__title{
-  font-family:var(--font-display);font-size:clamp(2.6rem,6.5vw,5.6rem);font-weight:300;
-  line-height:.98;letter-spacing:-.02em;color:var(--pure-white);max-width:18ch;margin-bottom:2.5rem;
+.pulse-glow { animation: pulse-glow 2s infinite; }
+.section-glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
 }
-.hero__title em{font-style:italic;color:var(--gold-soft);font-weight:400}
-.hero__sub{font-size:1.05rem;line-height:1.65;color:rgba(245,241,234,.75);max-width:54ch;margin-bottom:3rem}
-.hero__actions{display:flex;gap:1.25rem;flex-wrap:wrap}
-
-.btn{
-  display:inline-flex;align-items:center;gap:.75rem;padding:1rem 1.85rem;
-  font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;border:none;
-  font-family:var(--font-mono);
-  transition:transform .3s var(--ease-quiet),background .3s var(--ease-quiet),color .3s var(--ease-quiet),border-color .3s var(--ease-quiet);
+nav.scrolled {
+  background: rgba(6, 8, 24, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
 }
-.btn--primary{background:var(--gold-star);color:var(--midnight)}
-.btn--primary:hover{background:var(--gold-soft);transform:translateY(-2px)}
-.btn--ghost{background:transparent;color:var(--parchment);border:1px solid rgba(245,241,234,.25)}
-.btn--ghost:hover{border-color:var(--gold-star);color:var(--gold-star)}
-.btn__arrow{transition:transform .3s var(--ease-quiet)}
-.btn:hover .btn__arrow{transform:translate(.2em,-.2em)}
-
-.hero__meta{
-  position:absolute;bottom:2.5rem;left:2.5rem;display:flex;gap:3rem;
-  font-family:var(--font-mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;
-  color:rgba(245,241,234,.5);z-index:4;
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6d28d9, #8b5cf6);
+  border-radius: 5px;
 }
-.hero__meta span strong{display:block;color:var(--gold-soft);font-size:1rem;font-family:var(--font-display);font-weight:400;letter-spacing:.02em;text-transform:none;margin-top:.35rem}
-@media (max-width:880px){.hero__meta{display:none}.hero__content{padding:7rem 1.5rem 3rem}}
-.hero__scroll{
-  position:absolute;bottom:2.5rem;right:2.5rem;
-  font-family:var(--font-mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;
-  color:rgba(245,241,234,.5);z-index:4;display:flex;align-items:center;gap:.75rem;
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.hero__scroll-line{width:40px;height:1px;background:rgba(245,241,234,.3);position:relative;overflow:hidden}
-.hero__scroll-line::after{content:'';position:absolute;left:0;top:0;width:30%;height:100%;background:var(--gold-star);animation:scrollLine 2.4s var(--ease-quiet) infinite}
-@keyframes scrollLine{0%{transform:translateX(-100%)}100%{transform:translateX(400%)}}
-@media (max-width:880px){.hero__scroll{display:none}}
-
-/* ===== Section base ===== */
-.section{position:relative;background:var(--midnight);padding:8rem 2.5rem;z-index:2}
-@media (max-width:880px){.section{padding:5rem 1.5rem}}
-.container{max-width:1400px;margin:0 auto}
-
-.eyebrow{
-  display:inline-flex;align-items:center;gap:.75rem;
-  font-family:var(--font-mono);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;
-  color:var(--gold-star);margin-bottom:2rem;
-  opacity:0;transform:translateY(16px);
-  transition:opacity 600ms var(--ease-quiet),transform 600ms var(--ease-quiet);
+.mobile-menu.open { transform: translateX(0); }
+.nav-link { position: relative; }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #fbbf24, #8b5cf6);
+  transition: width 0.3s ease;
 }
-.eyebrow.is-in{opacity:1;transform:none;transition-delay:100ms}
-.eyebrow::before{content:'';width:0;height:1px;background:var(--gold-star);transition:width 800ms var(--ease-quiet) 400ms}
-.eyebrow.is-in::before{width:2.5rem}
-
-.h2{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.8rem);font-weight:300;line-height:1.05;letter-spacing:-.02em;color:var(--pure-white)}
-.h2 em{font-style:italic;color:var(--gold-soft);font-weight:400}
-
-/* ===== Manifesto ===== */
-.manifesto{padding:10rem 2.5rem;background:var(--midnight);position:relative;z-index:2}
-.manifesto__inner{max-width:1100px;margin:0 auto}
-.manifesto__eyebrow{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-star);margin-bottom:3rem;display:flex;align-items:center;gap:1rem}
-.manifesto__eyebrow::before{content:'';width:2.5rem;height:1px;background:var(--gold-star)}
-.manifesto__text{font-family:var(--font-display);font-size:clamp(1.5rem,3.2vw,2.6rem);font-weight:300;line-height:1.3;letter-spacing:-.01em;color:var(--pure-white)}
-.manifesto__text .line{display:block;overflow:hidden}
-.manifesto__text .line .inner{display:block;transform:translateY(110%);transition:transform 1200ms var(--ease-quiet);transition-delay:calc(var(--i,0) * 180ms)}
-.manifesto__text.is-in .line .inner{transform:translateY(0)}
-.manifesto__text em{font-style:italic;color:var(--gold-soft);font-weight:400}
-.manifesto__sig{margin-top:4rem;display:flex;align-items:center;gap:1rem;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,241,234,.5)}
-.manifesto__sig::before{content:'';width:3rem;height:1px;background:rgba(245,241,234,.3)}
-@media (max-width:880px){.manifesto{padding:6rem 1.5rem}}
-
-/* ===== Destinations ===== */
-.destinations{padding:10rem 2.5rem;background:var(--navy-deep);position:relative;z-index:2}
-.destinations__head{display:grid;grid-template-columns:1.5fr 1fr;gap:4rem;align-items:flex-end;margin-bottom:5rem}
-@media (max-width:880px){.destinations__head{grid-template-columns:1fr;gap:2rem}}
-.destinations__head-right{color:rgba(245,241,234,.65);font-size:.95rem;line-height:1.7;max-width:42ch}
-.destinations__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem}
-@media (max-width:980px){.destinations__grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:640px){.destinations__grid{grid-template-columns:1fr}}
-
-.country-card{position:relative;aspect-ratio:4/5;overflow:hidden;cursor:pointer;background:var(--midnight)}
-.country-card__media{position:absolute;inset:0;overflow:hidden}
-.country-card__media img{width:100%;height:100%;object-fit:cover;filter:brightness(.65) saturate(.85);transform:scale(1.05);transition:transform 1.4s var(--ease-quiet),filter .8s var(--ease-quiet)}
-.country-card:hover .country-card__media img{transform:scale(1.12);filter:brightness(.5) saturate(1)}
-.country-card__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,18,40,.2) 0%,rgba(10,18,40,.92) 100%);pointer-events:none}
-.country-card__content{position:absolute;bottom:0;left:0;right:0;padding:2rem 1.75rem 2rem;z-index:2}
-.country-card__num{font-family:var(--font-mono);font-size:.65rem;letter-spacing:.3em;color:var(--gold-star);margin-bottom:.6rem}
-.country-card__name{font-family:var(--font-display);font-size:clamp(1.6rem,2.4vw,2.1rem);font-weight:400;color:var(--pure-white);line-height:1;margin-bottom:.6rem;letter-spacing:-.01em}
-.country-card__sub{font-size:.82rem;color:rgba(245,241,234,.7);line-height:1.55;margin-bottom:1.2rem;max-width:30ch}
-.country-card__meta{display:flex;gap:1.75rem;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,234,.55);transition:transform .35s var(--ease-quiet)}
-.country-card:hover .country-card__meta{transform:translateX(6px)}
-.country-card__meta span strong{display:block;color:var(--gold-soft);font-size:.85rem;font-family:var(--font-display);font-weight:400;letter-spacing:.02em;text-transform:none;margin-top:.3rem}
-.country-card__corner{position:absolute;top:1.5rem;right:1.5rem;color:var(--gold-star);font-size:1rem;opacity:0;transform:translate(-8px,8px);transition:opacity .4s var(--ease-quiet),transform .4s var(--ease-quiet)}
-.country-card:hover .country-card__corner{opacity:1;transform:translate(0,0)}
-.country-card__star{position:absolute;top:1.5rem;left:1.5rem;color:var(--gold-star);font-size:.7rem;letter-spacing:.2em;font-family:var(--font-mono)}
-
-/* ===== Services ===== */
-.services{padding:10rem 2.5rem;background:var(--midnight);position:relative;z-index:2}
-.services__head{margin-bottom:6rem;max-width:60ch}
-.sticky-pair{display:grid;grid-template-columns:5fr 7fr;gap:5rem;align-items:start;max-width:1400px;margin:0 auto}
-@media (max-width:980px){.sticky-pair{grid-template-columns:1fr;gap:3rem}}
-.sticky-pair__left{position:sticky;top:120px}
-@media (max-width:980px){.sticky-pair__left{position:static}}
-.sticky-pair__title{font-family:var(--font-display);font-size:clamp(2rem,3.8vw,3.2rem);font-weight:300;line-height:1.05;letter-spacing:-.02em;color:var(--pure-white);margin-bottom:2rem}
-.sticky-pair__title em{font-style:italic;color:var(--gold-soft);font-weight:400}
-.sticky-pair__intro{color:rgba(245,241,234,.65);font-size:1rem;line-height:1.75;margin-bottom:2rem}
-.sticky-pair__meta{display:flex;flex-direction:column;gap:1.25rem;padding-top:2rem;border-top:1px solid rgba(245,241,234,.1)}
-.sticky-pair__meta-row{display:flex;justify-content:space-between;align-items:center;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,241,234,.5)}
-.sticky-pair__meta-row strong{color:var(--gold-soft);font-family:var(--font-display);font-weight:400;letter-spacing:.02em;text-transform:none;font-size:.95rem}
-
-.service-item{padding:2.75rem 0;border-top:1px solid rgba(245,241,234,.08);cursor:pointer}
-.service-item:last-child{border-bottom:1px solid rgba(245,241,234,.08)}
-.service-item__head{display:flex;align-items:flex-start;gap:2rem;margin-bottom:1rem}
-.service-item__num{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.3em;color:var(--gold-star);flex-shrink:0;padding-top:.6rem;min-width:2rem}
-.service-item__body{flex:1}
-.service-item__title{font-family:var(--font-display);font-size:clamp(1.5rem,2.6vw,2.1rem);font-weight:400;color:var(--pure-white);line-height:1.15;margin-bottom:1rem;letter-spacing:-.01em;transition:transform .35s var(--ease-quiet),color .35s var(--ease-quiet);display:inline-block}
-.service-item:hover .service-item__title{transform:translateX(8px);color:var(--gold-soft)}
-.service-item__desc{color:rgba(245,241,234,.7);font-size:.98rem;line-height:1.7;max-width:58ch}
-.service-item__tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
-.service-item__tag{padding:.4rem .85rem;border:1px solid rgba(245,241,234,.15);font-family:var(--font-mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,234,.7)}
-
-/* ===== Process ===== */
-.process{padding:10rem 2.5rem;background:var(--navy-deep);position:relative;z-index:2}
-.process__head{text-align:center;max-width:780px;margin:0 auto 6rem}
-.process__head .eyebrow{justify-content:center}
-.process__head .h2{margin-bottom:1.5rem}
-.process__head p{color:rgba(245,241,234,.65);line-height:1.75;font-size:1rem}
-.process__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem 2rem;max-width:1300px;margin:0 auto}
-@media (max-width:980px){.process__grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.process__grid{grid-template-columns:1fr}}
-.process-step{padding:2rem 0 0;border-top:1px solid rgba(245,241,234,.15);position:relative}
-.process-step::before{content:'';position:absolute;top:-1px;left:0;width:25%;height:1px;background:var(--gold-star);transition:width .6s var(--ease-quiet)}
-.process-step:hover::before{width:100%}
-.process-step__num{font-family:var(--font-display);font-size:2.8rem;font-weight:300;color:var(--gold-star);line-height:1;margin-bottom:1.25rem;letter-spacing:-.02em}
-.process-step__title{font-family:var(--font-display);font-size:1.35rem;font-weight:400;color:var(--pure-white);margin-bottom:.85rem;line-height:1.2;letter-spacing:-.01em}
-.process-step__desc{color:rgba(245,241,234,.65);font-size:.92rem;line-height:1.65}
-
-/* ===== Stats ===== */
-.stats{padding:7rem 2.5rem;background:var(--midnight);border-top:1px solid rgba(245,241,234,.06);border-bottom:1px solid rgba(245,241,234,.06);position:relative;z-index:2}
-.stats__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3rem;max-width:1200px;margin:0 auto}
-@media (max-width:880px){.stats__grid{grid-template-columns:repeat(2,1fr);gap:2rem}}
-.stat{text-align:left;padding-left:1.5rem;border-left:1px solid rgba(245,241,234,.15)}
-.stat__num{font-family:var(--font-display);font-size:clamp(2.5rem,4.5vw,3.8rem);font-weight:300;color:var(--gold-soft);line-height:1;letter-spacing:-.02em;margin-bottom:.85rem}
-.stat__label{font-family:var(--font-mono);font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(245,241,234,.55);line-height:1.5}
-
-/* ===== Testimonials ===== */
-.testimonials{padding:10rem 2.5rem;background:var(--midnight);position:relative;z-index:2}
-.testimonials__head{max-width:780px;margin:0 auto 5rem}
-.testimonials__head .h2{margin-bottom:1.5rem}
-.testimonials__head p{color:rgba(245,241,234,.65);line-height:1.7;font-size:1.02rem}
-.testimonials__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;max-width:1200px;margin:0 auto}
-@media (max-width:880px){.testimonials__grid{grid-template-columns:1fr}}
-.testimonial{padding:2.5rem;background:rgba(245,241,234,.02);border:1px solid rgba(245,241,234,.08);transition:border-color .35s var(--ease-quiet),transform .35s var(--ease-quiet),background .35s var(--ease-quiet)}
-.testimonial:hover{border-color:rgba(245,184,64,.4);transform:translateY(-4px);background:rgba(245,184,64,.03)}
-.testimonial__quote-mark{font-family:var(--font-display);font-size:3rem;color:var(--gold-star);line-height:.5;margin-bottom:1rem}
-.testimonial__quote{font-family:var(--font-display);font-size:1.18rem;font-weight:300;line-height:1.55;color:var(--parchment);margin-bottom:2rem;letter-spacing:-.005em}
-.testimonial__author{display:flex;align-items:center;gap:1rem}
-.testimonial__avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--purple-haze),var(--gold-star));display:flex;align-items:center;justify-content:center;color:var(--pure-white);font-family:var(--font-display);font-size:1.1rem;font-weight:500}
-.testimonial__name{font-size:.95rem;color:var(--pure-white);font-weight:500}
-.testimonial__dest{font-family:var(--font-mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-star);margin-top:.3rem}
-
-/* ===== CTA ===== */
-.cta{padding:12rem 2.5rem;background:var(--navy-deep);position:relative;overflow:hidden;z-index:2}
-.cta__bg-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--font-display);font-size:clamp(8rem,25vw,22rem);font-weight:300;color:var(--pure-white);opacity:.04;letter-spacing:-.04em;white-space:nowrap;pointer-events:none;font-style:italic}
-.cta__content{position:relative;z-index:2;max-width:820px;margin:0 auto;text-align:center}
-.cta__stars{display:flex;justify-content:center;gap:1.5rem;margin-bottom:2.5rem;color:var(--gold-star);font-size:.8rem}
-.cta__title{font-family:var(--font-display);font-size:clamp(2.4rem,5.5vw,4.6rem);font-weight:300;line-height:1.05;letter-spacing:-.02em;color:var(--pure-white);margin-bottom:2rem}
-.cta__title em{font-style:italic;color:var(--gold-soft);font-weight:400}
-.cta__sub{font-size:1.1rem;color:rgba(245,241,234,.7);line-height:1.7;margin-bottom:3rem;max-width:54ch;margin-left:auto;margin-right:auto}
-.cta__actions{display:flex;gap:1.25rem;justify-content:center;flex-wrap:wrap}
-.cta__contact{margin-top:4rem;padding-top:3rem;border-top:1px solid rgba(245,241,234,.1);display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,241,234,.55)}
-.cta__contact a{color:var(--gold-soft);transition:transform .3s var(--ease-quiet)}
-.cta__contact a:hover{transform:translateX(4px)}
-
-/* ===== Footer ===== */
-.footer{padding:5rem 2.5rem 2rem;background:var(--midnight);border-top:1px solid rgba(245,241,234,.08);position:relative;z-index:2}
-.footer__top{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(245,241,234,.08)}
-@media (max-width:880px){.footer__top{grid-template-columns:1fr 1fr;gap:2.5rem}}
-.footer__brand-block{max-width:38ch}
-.footer__brand{display:flex;align-items:center;gap:.85rem;margin-bottom:1.5rem}
-.footer__brand img{height:36px;width:auto;object-fit:contain;filter:drop-shadow(0 0 6px rgba(245,184,64,.15)) brightness(1.15)}
-.footer__brand-text{display:flex;flex-direction:column;line-height:1}
-.footer__brand-name{font-family:var(--font-display);font-size:1.3rem;color:var(--pure-white);font-weight:500}
-.footer__brand-sub{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--purple-soft);margin-top:4px}
-.footer__tagline{color:rgba(245,241,234,.6);font-size:.92rem;line-height:1.65;margin-bottom:1.5rem}
-.footer__social{display:flex;gap:.75rem}
-.footer__social a{width:36px;height:36px;border:1px solid rgba(245,241,234,.15);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:.7rem;color:rgba(245,241,234,.6);transition:border-color .3s var(--ease-quiet),color .3s var(--ease-quiet)}
-.footer__social a:hover{border-color:var(--gold-star);color:var(--gold-star)}
-.footer__col h4{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold-star);margin-bottom:1.5rem;font-weight:500}
-.footer__col ul{list-style:none;display:flex;flex-direction:column;gap:.75rem}
-.footer__col a{color:rgba(245,241,234,.65);font-size:.9rem;transition:color .3s var(--ease-quiet),transform .3s var(--ease-quiet);display:inline-block}
-.footer__col a:hover{color:var(--gold-soft);transform:translateX(4px)}
-.footer__bottom{max-width:1400px;margin:0 auto;padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-family:var(--font-mono);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,234,.4)}
-.footer__bottom a{color:rgba(245,241,234,.4);transition:color .3s var(--ease-quiet)}
-.footer__bottom a:hover{color:var(--gold-soft)}
-
-/* ===== WhatsApp Float ===== */
-.wa-float{
-  position:fixed;
-  bottom:1.5rem;
-  right:1.5rem;
-  z-index:90;
-  display:flex;
-  align-items:center;
-  gap:0;
-  padding:14px;
-  background:var(--navy-deep);
-  border:1px solid rgba(245,241,234,.1);
-  border-radius:50px;
-  box-shadow:0 8px 24px rgba(0,0,0,.4);
-  transition:all .35s var(--ease-quiet);
-  transform:translateY(120px);
-  opacity:0;
-  overflow:hidden;
+.nav-link:hover::after { width: 100%; }
+.faq-item { transition: all 0.3s ease; }
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
-.wa-float.is-visible{transform:translateY(0);opacity:1}
-.wa-float svg{width:28px;height:28px;fill:#25D366;flex-shrink:0;transition:fill .35s var(--ease-quiet)}
-.wa-float span{
-  max-width:0;
-  overflow:hidden;
-  white-space:nowrap;
-  font-family:var(--font-mono);
-  font-size:.7rem;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-  color:var(--pure-white);
-  transition:max-width .35s var(--ease-quiet),margin .35s var(--ease-quiet);
+.faq-item.open .faq-content { max-height: 500px; }
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+  color: var(--gold);
 }
-.wa-float:hover{background:#25D366;border-color:#25D366;padding:14px 20px}
-.wa-float:hover svg{fill:#fff}
-.wa-float:hover span{max-width:120px;margin-left:10px}
-
-/* ===== Reveals ===== */
-.reveal{opacity:0;transform:translateY(40px);transition:opacity 1000ms var(--ease-quiet),transform 1000ms var(--ease-quiet)}
-.reveal.is-in{opacity:1;transform:none}
-.reveal--d1{transition-delay:120ms}
-.reveal--d2{transition-delay:240ms}
-.reveal--d3{transition-delay:360ms}
-.reveal--d4{transition-delay:480ms}
-
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
-  .manifesto__text .line .inner{transform:none !important}
-  .reveal{opacity:1 !important;transform:none !important}
-  .wa-float{transform:translateY(0) !important;opacity:1 !important}
+.input-field {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: white;
+  transition: all 0.3s ease;
+}
+.input-field:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.1);
+}
+.input-field option { background: #0d1233; color: white; }
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track { animation: marquee 40s linear infinite; }
+select.input-field { -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238b5cf6' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1rem; padding-right: 2.5rem; }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
 }
 </style>
 </head>
 <body>
 
-<!-- ===== Loader ===== -->
-<div class="loader" id="loader">
-  <div class="loader__mark">Stellar</div>
-  <div class="loader__sub">Study Abroad</div>
-</div>
+<canvas id="starfield"></canvas>
 
-<!-- ===== Nav ===== -->
-<nav class="nav" id="nav">
-  <a href="#top" class="nav__brand">
-    <img src="https://z-cdn-media.chatglm.cn/files/f32b3c26-3b0e-4d63-b59d-83be874cbc29.png?auth_key=1881892021-16675db856ca4989bd5104b98820127d-0-1178ee9c1e43b52fcc63d790189cf38c" alt="Stellar Study Abroad logo" class="nav__logo">
-    <div class="nav__brand-text">
-      <span class="nav__name">Stellar</span>
-      <span class="nav__sub">Study Abroad</span>
+<!-- Navigation -->
+<nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center font-display font-bold text-white text-lg relative overflow-hidden">
+        <span class="relative z-10">S</span>
+        <div class="absolute top-1 right-1 w-1.5 h-1.5 bg-yellow-400 rounded-full"></div>
+      </div>
+      <div>
+        <div class="font-display text-xl font-bold tracking-tight">Stellar</div>
+        <div class="text-[10px] tracking-[0.2em] text-purple-300 uppercase">Study Abroad</div>
+      </div>
+    </a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#services" class="nav-link text-sm text-slate-300 hover:text-white">Services</a>
+      <a href="#destinations" class="nav-link text-sm text-slate-300 hover:text-white">Destinations</a>
+      <a href="#process" class="nav-link text-sm text-slate-300 hover:text-white">Process</a>
+      <a href="#why" class="nav-link text-sm text-slate-300 hover:text-white">Why Stellar</a>
+      <a href="#testimonials" class="nav-link text-sm text-slate-300 hover:text-white">Stories</a>
+      <a href="#faq" class="nav-link text-sm text-slate-300 hover:text-white">FAQ</a>
     </div>
-  </a>
-  <ul class="nav__links">
-    <li><a href="#destinations">Destinations</a></li>
-    <li><a href="#coaching">Coaching</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#testimonials">Voices</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <!-- Updated the link below to launch your Messenger consultation text -->
-  <a 
-    href="https://m.me/stellarstudyabroad" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    class="nav__cta"
-  >
-    Book Consultation
-  </a>
+    <div class="flex items-center gap-4">
+      <a href="#contact" class="hidden sm:inline-flex btn-primary px-6 py-2.5 rounded-full text-sm font-semibold">
+        <span>Book Consultation</span>
+      </a>
+      <button id="menuBtn" class="lg:hidden text-white text-xl" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
 </nav>
 
+<!-- Mobile menu -->
+<div id="mobileMenu" class="mobile-menu fixed top-0 right-0 bottom-0 w-80 bg-[#0d1233] z-50 p-8 lg:hidden">
+  <button id="closeMenu" class="absolute top-6 right-6 text-white text-xl" aria-label="Close menu">
+    <i class="fas fa-times"></i>
+  </button>
+  <div class="mt-12 flex flex-col gap-6">
+    <a href="#services" class="text-slate-200 hover:text-white">Services</a>
+    <a href="#destinations" class="text-slate-200 hover:text-white">Destinations</a>
+    <a href="#process" class="text-slate-200 hover:text-white">Process</a>
+    <a href="#why" class="text-slate-200 hover:text-white">Why Stellar</a>
+    <a href="#testimonials" class="text-slate-200 hover:text-white">Stories</a>
+    <a href="#faq" class="text-slate-200 hover:text-white">FAQ</a>
+    <a href="#contact" class="btn-primary px-6 py-3 rounded-full text-center font-semibold"><span>Book Consultation</span></a>
+  </div>
+</div>
 
-<!-- ===== Hero ===== -->
-<section class="hero" id="top">
-  <div class="hero__noise"></div>
-  <div class="hero__stars" aria-hidden="true">
-    <span class="hero__star hero__star--1">✦</span>
-    <span class="hero__star hero__star--2">✦</span>
-    <span class="hero__star hero__star--3">✦</span>
-    <span class="hero__star hero__star--4">✦</span>
-    <span class="hero__star hero__star--5">✦</span>
-    <span class="hero__star hero__star--6">✦</span>
+<!-- Hero -->
+<section id="home" class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+  <div class="section-glow" style="background: #6d28d9; top: 10%; left: -10%;"></div>
+  <div class="section-glow" style="background: #fbbf24; bottom: -10%; right: -10%; opacity: 0.15;"></div>
+  
+  <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-8">
+        <span class="w-2 h-2 rounded-full bg-yellow-400 pulse-glow"></span>
+        <span class="text-xs tracking-wide text-slate-300">Admissions Open for 2024-25 Intake</span>
+      </div>
+      <h1 class="font-display font-light text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight">
+        Chart your<br>
+        <span class="font-bold gradient-text">stellar journey</span><br>
+        to world-class<br>
+        <span class="italic font-normal">education.</span>
+      </h1>
+      <p class="mt-8 text-lg text-slate-300 max-w-xl leading-relaxed">
+        Premium study abroad consultation and IELTS/Duolingo English Test coaching. We guide ambitious students to top universities across <span class="text-white font-medium">nine countries</span>—from the Ivy League to the European Union.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a href="#contact" class="btn-primary px-8 py-4 rounded-full font-semibold">
+          <span>Book Free Consultation</span>
+        </a>
+        <a href="#destinations" class="px-8 py-4 rounded-full font-semibold border border-purple-400/30 text-white hover:bg-white/5 transition">Explore Destinations</a>
+      </div>
+      <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-slate-400">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-star text-yellow-400"></i>
+          <span>4.9 / 5 rating</span>
+        </div>
+        <div class="w-px h-4 bg-slate-700"></div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-user-graduate text-purple-400"></i>
+          <span>500+ students placed</span>
+        </div>
+        <div class="w-px h-4 bg-slate-700"></div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-globe text-purple-400"></i>
+          <span>9 countries</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="lg:col-span-5 relative">
+      <div class="relative">
+        <div class="glass rounded-3xl p-6 float" style="animation-delay: 0s">
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-xs text-slate-400">APPLICATION STATUS</div>
+            <div class="w-8 h-8 rounded-full bg-green-400/20 flex items-center justify-center">
+              <i class="fas fa-check text-green-400 text-xs"></i>
+            </div>
+          </div>
+          <div class="font-display text-2xl font-semibold mb-1">BSc Computer Science</div>
+          <div class="text-sm text-purple-300 mb-4">University of Helsinki, Finland</div>
+          <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-purple-500 to-yellow-400 rounded-full" style="width: 85%"></div>
+          </div>
+          <div class="text-xs text-slate-400 mt-2">Visa approved · 85% complete</div>
+        </div>
+        
+        <div class="glass rounded-2xl p-5 absolute -bottom-12 -left-8 float" style="animation-delay: 1s">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
+              <i class="fas fa-award text-[#0d1233] text-xl"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">IELTS Score</div>
+              <div class="font-display text-xl font-bold gold-text">8.5 / 9.0</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="glass rounded-2xl p-5 absolute -top-6 -right-4 float" style="animation-delay: 2s">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-400 to-purple-700 flex items-center justify-center">
+              <i class="fas fa-plane-departure text-white"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">Next Intake</div>
+              <div class="font-display text-base font-semibold">Jan 2027</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   
-  <div class="hero__bigtext" id="heroBigText">STELLAR</div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 text-xs flex flex-col items-center gap-2 animate-bounce">
+    <span>Scroll to explore</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="relative py-20 border-y border-purple-500/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="reveal text-center">
+        <div class="font-display text-5xl md:text-6xl font-bold gradient-text"><span class="counter" data-target="500">0</span>+</div>
+        <div class="text-sm text-slate-400 mt-2 tracking-wide">Students Placed Abroad</div>
+      </div>
+      <div class="reveal text-center">
+        <div class="font-display text-5xl md:text-6xl font-bold gradient-text"><span class="counter" data-target="9">0</span></div>
+        <div class="text-sm text-slate-400 mt-2 tracking-wide">Destination Countries</div>
+      </div>
+      <div class="reveal text-center">
+        <div class="font-display text-5xl md:text-6xl font-bold gradient-text"><span class="counter" data-target="95">0</span>%</div>
+        <div class="text-sm text-slate-400 mt-2 tracking-wide">Visa Success Rate</div>
+      </div>
+      <div class="reveal text-center">
+        <div class="font-display text-5xl md:text-6xl font-bold gradient-text"><span class="counter" data-target="10">0</span>+</div>
+        <div class="text-sm text-slate-400 mt-2 tracking-wide">Years of Excellence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="relative py-28">
+  <div class="section-glow" style="background: #8b5cf6; top: 30%; right: -10%; opacity: 0.2;"></div>
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="max-w-3xl reveal">
+      <div class="text-xs tracking-[0.3em] text-purple-400 mb-4">— OUR SERVICES</div>
+      <h2 class="font-display text-4xl md:text-6xl font-light leading-tight">
+        Everything you need to <span class="font-bold gradient-text">study abroad</span>, under one roof.
+      </h2>
+      <p class="mt-6 text-slate-300 text-lg">From your first IELTS lesson to landing at your dream university, Stellar is your dedicated partner at every milestone.</p>
+    </div>
+    
+    <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="lift glass rounded-3xl p-8 reveal">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center mb-6">
+          <i class="fas fa-compass text-white text-2xl"></i>
+        </div>
+        <h3 class="font-display text-2xl font-semibold mb-3">Personalized Consultation</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">One-on-one counseling to identify the right country, course, and university aligned with your academic profile, career goals, and budget.</p>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Profile evaluation & shortlisting</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Course & university selection</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Career roadmap planning</li>
+        </ul>
+      </div>
+      
+      <div class="lift glass rounded-3xl p-8 reveal">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center mb-6">
+          <i class="fas fa-language text-[#0d1233] text-2xl"></i>
+        </div>
+        <h3 class="font-display text-2xl font-semibold mb-3">IELTS & DET Coaching</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">Master English proficiency tests with certified trainers. Targeted curriculum, mock tests, and personalized feedback for IELTS and Duolingo English Test.</p>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Cambridge-certified trainers</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Weekly full-length mock tests</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Speaking & writing feedback</li>
+        </ul>
+      </div>
+      
+      <div class="lift glass rounded-3xl p-8 reveal">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center mb-6">
+          <i class="fas fa-file-pen text-white text-2xl"></i>
+        </div>
+        <h3 class="font-display text-2xl font-semibold mb-3">Application & SOP Support</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">Craft compelling applications with expert guidance on Statement of Purpose, Letters of Recommendation, CV, and portfolio building.</p>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>SOP & LOR editing</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Application portal management</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Document verification</li>
+        </ul>
+      </div>
+      
+      <div class="lift glass rounded-3xl p-8 reveal">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center mb-6">
+          <i class="fas fa-passport text-[#0d1233] text-2xl"></i>
+        </div>
+        <h3 class="font-display text-2xl font-semibold mb-3">Visa & Immigration</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">End-to-end visa guidance with 95% success rate. Mock interviews, financial documentation, and pre-departure briefings for student visas.</p>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Visa documentation checklist</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Mock visa interviews</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Financial proof guidance</li>
+        </ul>
+      </div>
+      
+      <div class="lift glass rounded-3xl p-8 reveal">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center mb-6">
+          <i class="fas fa-coins text-white text-2xl"></i>
+        </div>
+        <h3 class="font-display text-2xl font-semibold mb-3">Scholarship Guidance</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">Identify and apply for merit-based, need-based, and country-specific scholarships to fund your international education.</p>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Scholarship matching</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Essay & application help</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Education loan assistance</li>
+        </ul>
+      </div>
+      
+      <div class="lift glass rounded-3xl p-8 reveal">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center mb-6">
+          <i class="fas fa-house-user text-[#0d1233] text-2xl"></i>
+        </div>
+        <h3 class="font-display text-2xl font-semibold mb-3">Pre-Departure & Beyond</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-6">Accommodation assistance, forex, travel, and ongoing support after you arrive. We don't say goodbye at the airport.</p>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Accommodation & airport pickup</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Forex & travel insurance</li>
+          <li class="flex items-center gap-3"><i class="fas fa-check text-yellow-400 text-xs"></i>Alumni network access</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Destinations -->
+<section id="destinations" class="relative py-28">
+  <div class="section-glow" style="background: #fbbf24; top: 20%; left: -10%; opacity: 0.1;"></div>
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="max-w-3xl reveal">
+      <div class="text-xs tracking-[0.3em] text-purple-400 mb-4">— DESTINATIONS</div>
+      <h2 class="font-display text-4xl md:text-6xl font-light leading-tight">
+        Nine countries. <span class="font-bold gradient-text">Endless possibilities.</span>
+      </h2>
+      <p class="mt-6 text-slate-300 text-lg">From the innovation hubs of North America to the tuition-free public universities of Germany, we open doors to the world's finest education systems.</p>
+    </div>
+    
+    <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇺🇸</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-yellow-400/10 text-yellow-400 border border-yellow-400/30">Top Choice</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">United States</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">Home to Ivy League and Silicon Valley. Pursue cutting-edge research, OPT work authorization, and the world's largest economy.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">MIT, Stanford, Harvard</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">CS, Business, STEM</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">$25k – $60k</span></div>
+        </div>
+      </article>
+      
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇬🇧</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-purple-400/10 text-purple-300 border border-purple-400/30">Popular</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">United Kingdom</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">A year-long master's, the Graduate Route visa, and centuries of academic prestige at Oxford, Cambridge, and the Russell Group.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">Oxford, UCL, Imperial</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">Law, Finance, Engineering</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">£15k – £40k</span></div>
+        </div>
+      </article>
+      
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇨🇦</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-purple-400/10 text-purple-300 border border-purple-400/30">PR Pathway</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">Canada</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">Post-Graduation Work Permit up to 3 years and a clear path to permanent residency. Multicultural, safe, and welcoming.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">Toronto, UBC, McGill</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">Data Science, Healthcare</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">CAD 20k – 40k</span></div>
+        </div>
+      </article>
+      
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇩🇪</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-yellow-400/10 text-yellow-400 border border-yellow-400/30">Free Tuition</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">Germany</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">Tuition-free public universities, engineering excellence, and an 18-month post-study work visa. Europe's industrial powerhouse.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">TUM, Heidelberg, RWTH</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">Engineering, Auto, Medicine</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">€0 – €1,500</span></div>
+        </div>
+      </article>
+      
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇫🇮</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-purple-400/10 text-purple-300 border border-purple-400/30">Innovation</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">Finland</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">World's best education system, English-taught master's programs, and scholarships up to 100% for international students.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">Helsinki, Aalto, Tampere</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">Tech, Design, Education</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">€8k – €18k</span></div>
+        </div>
+      </article>
+      
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇮🇪</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-purple-400/10 text-purple-300 border border-purple-400/30">Tech Hub</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">Ireland</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">European headquarters of Google, Apple, and Meta. Two-year stay-back option and an English-speaking EU member.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">Trinity, UCD, Galway</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">Software, Pharma, Finance</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">€10k – €25k</span></div>
+        </div>
+      </article>
+      
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇮🇹</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-yellow-400/10 text-yellow-400 border border-yellow-400/30">Affordable</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">Italy</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">Affordable tuition, generous regional scholarships, and excellence in fashion, design, architecture, and the arts.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">Bologna, Politecnico, Sapienza</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">Design, Architecture, Arts</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">€1k – €10k</span></div>
+        </div>
+      </article>
+      
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇭🇺</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-yellow-400/10 text-yellow-400 border border-yellow-400/30">Schengen</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">Hungary</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">Stipendium Hungaricum scholarships, affordable living, and gateway to the Schengen Zone. Strong in medicine and sciences.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">ELTE, Budapest, Szeged</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">Medicine, Engineering, Sciences</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">€2k – €8k</span></div>
+        </div>
+      </article>
+      
+      <article class="country-card glass rounded-3xl p-8 reveal">
+        <div class="flex items-start justify-between mb-6">
+          <div class="text-5xl" aria-hidden="true">🇷🇴</div>
+          <div class="text-xs px-3 py-1 rounded-full bg-yellow-400/10 text-yellow-400 border border-yellow-400/30">Emerging</div>
+        </div>
+        <h3 class="font-display text-2xl font-semibold">Romania</h3>
+        <p class="text-sm text-slate-400 mt-2 mb-4">Affordable medical and engineering degrees in English, EU-recognized diplomas, and a fast-growing IT sector in Bucharest.</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Top universities</span><span class="text-slate-200">Bucharest, Cluj, Iasi</span></div>
+          <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-slate-400">Popular programs</span><span class="text-slate-200">Medicine, IT, Engineering</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Tuition / year</span><span class="text-slate-200">€2k – €5k</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process" class="relative py-28">
+  <div class="section-glow" style="background: #6d28d9; bottom: 20%; right: -10%; opacity: 0.2;"></div>
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="max-w-3xl reveal">
+      <div class="text-xs tracking-[0.3em] text-purple-400 mb-4">— THE STELLAR PROCESS</div>
+      <h2 class="font-display text-4xl md:text-6xl font-light leading-tight">
+        Four steps from <span class="font-bold gradient-text">dream to departure.</span>
+      </h2>
+    </div>
+    
+    <div class="mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+      <div class="reveal">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center text-2xl font-display font-bold mb-6">01</div>
+        <h3 class="font-display text-xl font-semibold mb-3">Discover & Assess</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">Free consultation to evaluate your academic profile, career aspirations, and budget. We chart a personalized roadmap.</p>
+      </div>
+      <div class="reveal">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-2xl font-display font-bold mb-6 text-[#0d1233]">02</div>
+        <h3 class="font-display text-xl font-semibold mb-3">Prepare & Apply</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">Begin IELTS/DET coaching and start your university applications. We refine your SOP, LORs, and supporting documents.</p>
+      </div>
+      <div class="reveal">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center text-2xl font-display font-bold mb-6">03</div>
+        <h3 class="font-display text-xl font-semibold mb-3">Admit & Visa</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">Receive offer letters, finalize your university, and complete visa documentation with mock interview preparation.</p>
+      </div>
+      <div class="reveal">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center text-2xl font-display font-bold mb-6 text-[#0d1233]">04</div>
+        <h3 class="font-display text-xl font-semibold mb-3">Fly & Settle</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">Pre-departure briefing, accommodation, forex, and airport pickup. You arrive prepared; we stay connected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Stellar -->
+<section id="why" class="relative py-28 border-y border-purple-500/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <div class="text-xs tracking-[0.3em] text-purple-400 mb-4">— WHY STELLAR</div>
+        <h2 class="font-display text-4xl md:text-6xl font-light leading-tight">
+          Not just an agency. <br><span class="font-bold gradient-text">Your career architects.</span>
+        </h2>
+        <p class="mt-6 text-slate-300 text-lg leading-relaxed">We treat every student as a unique constellation of strengths, ambitions, and constraints. Our counselors are alumni of the very universities you're applying to—and our coaches have scored band 8+ on the IELTS themselves.</p>
+        
+        <div class="mt-10 grid sm:grid-cols-2 gap-6">
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-user-tie text-purple-400"></i>
+            </div>
+            <div>
+              <div class="font-semibold mb-1">Dedicated Counselor</div>
+              <div class="text-sm text-slate-400">One expert assigned to you for the entire journey.</div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-stopwatch text-yellow-400"></i>
+            </div>
+            <div>
+              <div class="font-semibold mb-1">24/7 Support</div>
+              <div class="text-sm text-slate-400">Round-the-clock assistance across time zones.</div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-shield-halved text-purple-400"></i>
+            </div>
+            <div>
+              <div class="font-semibold mb-1">Transparent Pricing</div>
+              <div class="text-sm text-slate-400">No hidden fees. No commissions from your tuition.</div>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-handshake text-yellow-400"></i>
+            </div>
+            <div>
+              <div class="font-semibold mb-1">200+ University Partners</div>
+              <div class="text-sm text-slate-400">Direct relationships for faster admissions.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="reveal">
+        <div class="glass rounded-3xl p-8">
+          <div class="flex items-center justify-between mb-8">
+            <div class="text-xs tracking-[0.2em] text-slate-400">SUCCESS METRICS</div>
+            <i class="fas fa-chart-line text-purple-400"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between text-sm mb-2">
+                <span class="text-slate-300">Visa Approval Rate</span>
+                <span class="gold-text font-bold">95%</span>
+              </div>
+              <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-2">
+                <span class="text-slate-300">IELTS Average Score</span>
+                <span class="gold-text font-bold">7.5 / 9</span>
+              </div>
+              <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-purple-500 to-purple-700 rounded-full" style="width: 83%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-2">
+                <span class="text-slate-300">Scholarship Success</span>
+                <span class="gold-text font-bold">72%</span>
+              </div>
+              <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-yellow-400 to-purple-500 rounded-full" style="width: 72%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-2">
+                <span class="text-slate-300">Admission Offer Rate</span>
+                <span class="gold-text font-bold">98%</span>
+              </div>
+              <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-purple-500 to-yellow-400 rounded-full" style="width: 98%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
+            <div>
+              <div class="text-3xl font-display font-bold gold-text">500+</div>
+              <div class="text-xs text-slate-400">Dreams realized</div>
+            </div>
+            <a href="#contact" class="text-sm text-purple-300 hover:text-white flex items-center gap-2">Start yours <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="relative py-28">
+  <div class="section-glow" style="background: #8b5cf6; top: 30%; left: -10%; opacity: 0.2;"></div>
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="max-w-3xl reveal">
+      <div class="text-xs tracking-[0.3em] text-purple-400 mb-4">— STUDENT STORIES</div>
+      <h2 class="font-display text-4xl md:text-6xl font-light leading-tight">
+        Their journeys <span class="font-bold gradient-text">became constellations.</span>
+      </h2>
+    </div>
+    
+    <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="glass rounded-3xl p-8 lift reveal">
+        <div class="flex items-center gap-1 mb-6 text-yellow-400">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-slate-200 leading-relaxed mb-6">"I scored 8.0 on my IELTS thanks to Stellar's coaching. Within four months, I had offers from three universities in Finland. The team made everything feel effortless."</p>
+        <div class="flex items-center gap-4 pt-6 border-t border-white/5">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-yellow-500 flex items-center justify-center font-display font-bold">AR</div>
+          <div>
+            <div class="font-semibold">Aisha Rahman</div>
+            <div class="text-xs text-slate-400">MSc Data Science · Aalto University, Finland</div>
+          </div>
+        </div>
+      </article>
+      
+      <article class="glass rounded-3xl p-8 lift reveal">
+        <div class="flex items-center gap-1 mb-6 text-yellow-400">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-slate-200 leading-relaxed mb-6">"From shortlisting to visa stamping, Stellar handled everything. I'm now pursuing Mechanical Engineering at TU Munich—tuition-free. Couldn't have asked for more."</p>
+        <div class="flex items-center gap-4 pt-6 border-t border-white/5">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-yellow-500 flex items-center justify-center font-display font-bold">RK</div>
+          <div>
+            <div class="font-semibold">Rahul Krishnan</div>
+            <div class="text-xs text-slate-400">BEng Mechanical · TU Munich, Germany</div>
+          </div>
+        </div>
+      </article>
+      
+      <article class="glass rounded-3xl p-8 lift reveal">
+        <div class="flex items-center gap-1 mb-6 text-yellow-400">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-slate-200 leading-relaxed mb-6">"The DET coaching was laser-focused. I scored 135 in six weeks. Stellar's counselors knew exactly which Italian universities fit my design portfolio. Truly grateful."</p>
+        <div class="flex items-center gap-4 pt-6 border-t border-white/5">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-yellow-500 flex items-center justify-center font-display font-bold">PS</div>
+          <div>
+            <div class="font-semibold">Priya Sharma</div>
+            <div class="text-xs text-slate-400">MA Fashion Design · Politecnico di Milano, Italy</div>
+          </div>
+        </div>
+      </article>
+    </div>
+    
+    <div class="mt-20">
+      <div class="text-center text-xs tracking-[0.3em] text-slate-500 mb-8">UNIVERSITY PARTNERS</div>
+      <div class="overflow-hidden">
+        <div class="marquee-track flex gap-12 whitespace-nowrap">
+          <span class="font-display text-2xl text-slate-400">Harvard</span>
+          <span class="font-display text-2xl text-slate-400">Oxford</span>
+          <span class="font-display text-2xl text-slate-400">MIT</span>
+          <span class="font-display text-2xl text-slate-400">University of Toronto</span>
+          <span class="font-display text-2xl text-slate-400">TU Munich</span>
+          <span class="font-display text-2xl text-slate-400">Aalto University</span>
+          <span class="font-display text-2xl text-slate-400">Trinity College Dublin</span>
+          <span class="font-display text-2xl text-slate-400">University of Helsinki</span>
+          <span class="font-display text-2xl text-slate-400">Politecnico di Milano</span>
+          <span class="font-display text-2xl text-slate-400">ELTE Budapest</span>
+          <span class="font-display text-2xl text-slate-400">University of Bucharest</span>
+          <span class="font-display text-2xl text-slate-400">Harvard</span>
+          <span class="font-display text-2xl text-slate-400">Oxford</span>
+          <span class="font-display text-2xl text-slate-400">MIT</span>
+          <span class="font-display text-2xl text-slate-400">University of Toronto</span>
+          <span class="font-display text-2xl text-slate-400">TU Munich</span>
+          <span class="font-display text-2xl text-slate-400">Aalto University</span>
+          <span class="font-display text-2xl text-slate-400">Trinity College Dublin</span>
+          <span class="font-display text-2xl text-slate-400">University of Helsinki</span>
+          <span class="font-display text-2xl text-slate-400">Politecnico di Milano</span>
+          <span class="font-display text-2xl text-slate-400">ELTE Budapest</span>
+          <span class="font-display text-2xl text-slate-400">University of Bucharest</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="relative py-28">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center reveal">
+      <div class="text-xs tracking-[0.3em] text-purple-400 mb-4">— FREQUENTLY ASKED</div>
+      <h2 class="font-display text-4xl md:text-6xl font-light leading-tight">
+        Questions, <span class="font-bold gradient-text">answered.</span>
+      </h2>
+    </div>
+    
+    <div class="mt-16 space-y-4">
+      <div class="faq-item glass rounded-2xl p-6 reveal">
+        <button class="faq-toggle w-full flex items-center justify-between text-left">
+          <span class="font-display text-lg font-semibold pr-4">When should I start my study abroad preparation?</span>
+          <i class="fas fa-plus faq-icon transition-transform text-purple-400"></i>
+        </button>
+        <div class="faq-content mt-4 text-slate-400 text-sm leading-relaxed">
+          Ideally, begin 12–18 months before your intended intake. This allows time for IELTS/DET preparation, university shortlisting, application drafting, and visa processing. However, we've successfully placed students in as little as 4 months when timelines are tight.
+        </div>
+      </div>
+      
+      <div class="faq-item glass rounded-2xl p-6 reveal">
+        <button class="faq-toggle w-full flex items-center justify-between text-left">
+          <span class="font-display text-lg font-semibold pr-4">Do you guarantee visa approval?</span>
+          <i class="fas fa-plus faq-icon transition-transform text-purple-400"></i>
+        </button>
+        <div class="faq-content mt-4 text-slate-400 text-sm leading-relaxed">
+          No ethical consultant can guarantee visa approval, as the final decision rests with the embassy. However, our 95% visa success rate reflects rigorous documentation, financial proofing, and mock interview preparation that significantly increases approval odds.
+        </div>
+      </div>
+      
+      <div class="faq-item glass rounded-2xl p-6 reveal">
+        <button class="faq-toggle w-full flex items-center justify-between text-left">
+          <span class="font-display text-lg font-semibold pr-4">What IELTS score do I need for top universities?</span>
+          <i class="fas fa-plus faq-icon transition-transform text-purple-400"></i>
+        </button>
+        <div class="faq-content mt-4 text-slate-400 text-sm leading-relaxed">
+          Most top-tier universities require an overall IELTS band of 6.5–7.5, with no band below 6.0. For competitive programs like medicine, law, or top business schools, aim for 7.5+. Our coaching program is designed to help you reach these targets systematically.
+        </div>
+      </div>
+      
+      <div class="faq-item glass rounded-2xl p-6 reveal">
+        <button class="faq-toggle w-full flex items-center justify-between text-left">
+          <span class="font-display text-lg font-semibold pr-4">Can I study in Germany without knowing German?</span>
+          <i class="fas fa-plus faq-icon transition-transform text-purple-400"></i>
+        </button>
+        <div class="faq-content mt-4 text-slate-400 text-sm leading-relaxed">
+          Yes. Germany offers over 1,500 English-taught master's programs, particularly in engineering, business, and natural sciences. While not mandatory for admission, learning basic German significantly enhances your daily life and post-study job prospects.
+        </div>
+      </div>
+      
+      <div class="faq-item glass rounded-2xl p-6 reveal">
+        <button class="faq-toggle w-full flex items-center justify-between text-left">
+          <span class="font-display text-lg font-semibold pr-4">What is the Duolingo English Test (DET) and is it accepted?</span>
+          <i class="fas fa-plus faq-icon transition-transform text-purple-400"></i>
+        </button>
+        <div class="faq-content mt-4 text-slate-400 text-sm leading-relaxed">
+          The DET is a computer-adaptive English proficiency test accepted by 4,000+ universities worldwide, including many in the USA, UK, Canada, and Europe. It's faster, cheaper ($59 vs $200+), and can be taken from home. We coach students specifically for the DET format.
+        </div>
+      </div>
+      
+      <div class="faq-item glass rounded-2xl p-6 reveal">
+        <button class="faq-toggle w-full flex items-center justify-between text-left">
+          <span class="font-display text-lg font-semibold pr-4">What is your fee structure?</span>
+          <i class="fas fa-plus faq-icon transition-transform text-purple-400"></i>
+        </button>
+        <div class="faq-content mt-4 text-slate-400 text-sm leading-relaxed">
+          Our consultation fees are transparent and tiered based on the level of service required—ranging from comprehensive end-to-end packages to standalone IELTS/DET coaching. The first consultation is always free. Contact us for a personalized quote tailored to your destination and academic level.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / Contact -->
+<section id="contact" class="relative py-28">
+  <div class="section-glow" style="background: #6d28d9; top: 20%; left: 30%; opacity: 0.3;"></div>
+  <div class="section-glow" style="background: #fbbf24; bottom: 0%; right: 30%; opacity: 0.1;"></div>
   
-  <div class="hero__portrait" id="heroPortrait">
-    <img src="assets/dartmouthstellarstudyabroad.jpg" alt="International student preparing for study abroad journey with Stellar Study Abroad" width="600" height="800" decoding="async" style="object-position: center 25%;">
-    <div class="hero__portrait-tag">
-      <span>Class of 2025</span>
-      <span>✦ ✦ ✦</span>
-    </div>
-  </div> <div class="hero__content">
-    <div class="hero__eyebrow">International Education Studio · Since 2024 </div>
-    <h1 class="hero__title">Your passport to a <em>global education,</em> crafted with intent.</h1>
-    <p class="hero__sub">Stellar Study Abroad is a boutique studio guiding students through IELTS, DET and SAT coaching, university shortlisting, application craft and visa documentation — for nine destinations across North America, Europe and the United Kingdom.</p>
-    <div class="hero__actions">
-      <a href="#contact" class="btn btn--primary">Begin Your Journey<span class="btn__arrow">→</span></a>
-      <a href="#coaching" class="btn btn--ghost">Explore Coaching<span class="btn__arrow">↗</span></a>
-    </div>
-  </div>
-
-  <div class="hero__meta">
-    <span>Destinations<strong>9 Countries</strong></span>
-    <span>Coaching<strong>IELTS · DET · SAT</strong></span>
-    <span>Offers Secured<strong>1,200+</strong></span>
-  </div>
-
-  <div class="hero__scroll">
-    <span>Scroll</span>
-    <span class="hero__scroll-line"></span>
-  </div>
-</section>
-
-<!-- ===== Manifesto ===== -->
-<section class="manifesto">
-  <div class="manifesto__inner">
-    <div class="manifesto__eyebrow">Our Philosophy</div>
-    <p class="manifesto__text" id="manifesto">
-      <span class="line"><span class="inner">Stellar Study Abroad was founded on a single conviction —</span></span>
-      <span class="line"><span class="inner">that the path to an international education</span></span>
-      <span class="line"><span class="inner">should be as <em>carefully designed</em> as the degree that crowns it.</span></span>
-      <span class="line"><span class="inner">From your first diagnostic conversation to the day your visa is granted,</span></span>
-      <span class="line"><span class="inner">our consultants, IELTS coaches and admissions strategists</span></span>
-      <span class="line"><span class="inner">operate as one studio — not a sales floor.</span></span>
-    </p>
-    <div class="manifesto__sig">Stellar Study Abroad · Admissions Studio</div>
-  </div>
-</section>
-
-<!-- ===== Destinations ===== -->
-<section class="section destinations" id="destinations">
-  <div class="container">
-    <div class="destinations__head">
-      <div class="destinations__head-left">
-        <div class="eyebrow reveal">Destinations</div>
-        <h2 class="h2 reveal reveal--d1">Nine countries. <em>One curated</em> application strategy.</h2>
-      </div>
-      <p class="destinations__head-right reveal reveal--d2">Each destination below is served by a dedicated country-specialist who has either studied or worked in admissions there. We do not believe in one-size-fits-all — your shortlist is built backwards from your ambition, budget and post-study goals.</p>
-    </div>
-
-    <div class="destinations__grid" id="destGrid">
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-usa-skylines-university/600/750" alt="Study in United States of America — American university campus skyline"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">01 / DESTINATION</div>
-          <h3 class="country-card__name">United States</h3>
-          <p class="country-card__sub">Ivy-league ambition with community-college warmth. 4,500+ accredited institutions and OPT STEM extension up to 36 months.</p>
-          <div class="country-card__meta"><span>Programmes<strong>4,500+</strong></span><span>Intake<strong>Aug · Jan</strong></span></div>
-        </div>
-      </article>
-
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-uk-london-oxbridge/600/750" alt="Study in United Kingdom — historic British university architecture"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">02 / DESTINATION</div>
-          <h3 class="country-card__name">United Kingdom</h3>
-          <p class="country-card__sub">One-year masters, centuries of scholarship. The Graduate Route visa offers two years of post-study work.</p>
-          <div class="country-card__meta"><span>Programmes<strong>30,000+</strong></span><span>Intake<strong>Sep · Jan</strong></span></div>
-        </div>
-      </article>
-
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-canada-toronto-mountain/600/750" alt="Study in Canada — Canadian university with mountains"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">03 / DESTINATION</div>
-          <h3 class="country-card__name">Canada</h3>
-          <p class="country-card__sub">Post-Graduation Work Permit up to three years and a clear pathway to permanent residency through Express Entry.</p>
-          <div class="country-card__meta"><span>Programmes<strong>10,000+</strong></span><span>Intake<strong>Sep · Jan · May</strong></span></div>
-        </div>
-      </article>
-
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-germany-berlin-engineering/600/750" alt="Study in Germany — German engineering university campus"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">04 / DESTINATION</div>
-          <h3 class="country-card__name">Germany</h3>
-          <p class="country-card__sub">Public-tuition engineering and business schools with English-taught masters. 18-month job-seeker visa after graduation.</p>
-          <div class="country-card__meta"><span>Programmes<strong>2,000+</strong></span><span>Intake<strong>Oct · Apr</strong></span></div>
-        </div>
-      </article>
-
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-finland-helsinki-northern/600/750" alt="Study in Finland — Nordic university and Helsinki architecture"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">05 / DESTINATION</div>
-          <h3 class="country-card__name">Finland</h3>
-          <p class="country-card__sub">World-leading pedagogy, design and sustainability programmes. One-year post-study work permit extendable to four.</p>
-          <div class="country-card__meta"><span>Programmes<strong>400+</strong></span><span>Intake<strong>Sep · Jan</strong></span></div>
-        </div>
-      </article>
-
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-ireland-dublin-tech/600/750" alt="Study in Ireland — Dublin tech hub and Irish university"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">06 / DESTINATION</div>
-          <h3 class="country-card__name">Ireland</h3>
-          <p class="country-card__sub">European headquarters of Apple, Google and Meta. Two-year Third Level Graduate Scheme for non-EU students.</p>
-          <div class="country-card__meta"><span>Programmes<strong>5,000+</strong></span><span>Intake<strong>Sep · Jan</strong></span></div>
-        </div>
-      </article>
-
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-italy-rome-renaissance/600/750" alt="Study in Italy — Italian renaissance university architecture"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">07 / DESTINATION</div>
-          <h3 class="country-card__name">Italy</h3>
-          <p class="country-card__sub">Renaissance heritage in fashion, architecture and design. Tuition-free public universities for EU-equivalent residents.</p>
-          <div class="country-card__meta"><span>Programmes<strong>1,200+</strong></span><span>Intake<strong>Sep · Feb</strong></span></div>
-        </div>
-      </article>
-
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-romania-bucharest-medical/600/750" alt="Study in Romania — Romanian medical school and Bucharest architecture"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">08 / DESTINATION</div>
-          <h3 class="country-card__name">Romania</h3>
-          <p class="country-card__sub">Affordable EU medical, dental and pharmacy programmes taught in English. Globally recognised WHO-listed degrees.</p>
-          <div class="country-card__meta"><span>Programmes<strong>800+</strong></span><span>Intake<strong>Oct</strong></span></div>
-        </div>
-      </article>
-
-      <article class="country-card">
-        <div class="country-card__media"><img src="https://picsum.photos/seed/stellar-bulgaria-sofia-medical/600/750" alt="Study in Bulgaria — Bulgarian medical university in Sofia"></div>
-        <div class="country-card__overlay"></div>
-        <span class="country-card__star">✦</span>
-        <span class="country-card__corner">↗</span>
-        <div class="country-card__content">
-          <div class="country-card__num">09 / DESTINATION</div>
-          <h3 class="country-card__name">Bulgaria</h3>
-          <p class="country-card__sub">EU-accredited medicine, dentistry and pharmacy in English at a fraction of Western European tuition.</p>
-          <div class="country-card__meta"><span>Programmes<strong>600+</strong></span><span>Intake<strong>Oct</strong></span></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Coaching / Services ===== -->
-<section class="section services" id="coaching">
-  <div class="services__head">
-    <div class="eyebrow reveal">Coaching & Consultation</div>
-    <h2 class="h2 reveal reveal--d1">Three tests. <em>Seven services.</em> One cohesive strategy.</h2>
-  </div>
-
-  <div class="sticky-pair">
-    <div class="sticky-pair__left">
-      <h3 class="sticky-pair__title reveal">Built around the <em>whole applicant</em> — not just the test score.</h3>
-      <p class="sticky-pair__intro reveal reveal--d1">Our coaching philosophy treats IELTS, the Duolingo English Test and the SAT as craft, not cram. Each student is paired with a senior coach for the duration of preparation, with diagnostic mocks every fortnight and a custom weakness-map that updates after every session.</p>
-      <p class="sticky-pair__intro reveal reveal--d2">Beyond the test, our consultants handle every touchpoint of the application — from shortlist to scholarship essay to visa mock interview — so your narrative stays consistent from the first coaching class to the final stamp in your passport.</p>
-      <div class="sticky-pair__meta reveal reveal--d3">
-        <div class="sticky-pair__meta-row"><span>Coaching Format</span><strong>1 : 1 Mentor</strong></div>
-        <div class="sticky-pair__meta-row"><span>Session Length</span><strong>90 Minutes</strong></div>
-        <div class="sticky-pair__meta-row"><span>Mock Tests</span><strong>Fortnightly</strong></div>
-        <div class="sticky-pair__meta-row"><span>Pass Rate</span><strong>92% Top Band</strong></div>
-      </div>
-    </div>
-
-    <div class="sticky-pair__right">
-      <article class="service-item reveal">
-        <div class="service-item__head">
-          <span class="service-item__num">01</span>
-          <div class="service-item__body">
-            <h4 class="service-item__title">IELTS Academic Coaching</h4>
-            <p class="service-item__desc">A 12-week structured programme covering all four bands — Listening, Reading, Writing and Speaking — with senior British Council certified trainers. Includes 16 full-length mocks, individual speaking drills and a writing correction service that returns annotated feedback within 48 hours.</p>
-            <div class="service-item__tags">
-              <span class="service-item__tag">Academic</span>
-              <span class="service-item__tag">General Training</span>
-              <span class="service-item__tag">UKVI</span>
-              <span class="service-item__tag">Life Skills</span>
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="glass rounded-[3rem] p-8 md:p-16 overflow-hidden relative">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <div class="text-xs tracking-[0.3em] text-purple-400 mb-4">— BEGIN YOUR JOURNEY</div>
+          <h2 class="font-display text-4xl md:text-5xl font-light leading-tight">
+            Book your <span class="font-bold gradient-text">free consultation</span> today.
+          </h2>
+          <p class="mt-6 text-slate-300 text-lg">Take the first step toward your global education. A 30-minute call with our senior counselor could change your trajectory forever.</p>
+          
+          <div class="mt-10 space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                <i class="fas fa-envelope text-purple-400"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">Email us</div>
+                <div class="font-medium">hello@stellarstudyabroad.com</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center">
+                <i class="fas fa-phone text-yellow-400"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">Call us</div>
+                <div class="font-medium">+1 (555) 123-4567</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                <i class="fas fa-location-dot text-purple-400"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">Visit us</div>
+                <div class="font-medium">Stellar Tower, Education District</div>
+              </div>
             </div>
           </div>
         </div>
-      </article>
-
-      <article class="service-item reveal">
-        <div class="service-item__head">
-          <span class="service-item__num">02</span>
-          <div class="service-item__body">
-            <h4 class="service-item__title">Duolingo English Test (DET) Coaching</h4>
-            <p class="service-item__desc">A focused eight-week curriculum designed for the adaptive CAT-format DET. We cover all 11 question types, literacy, comprehension, conversation and production subscores — with proprietary mock tests calibrated against official DET scoring bands.</p>
-            <div class="service-item__tags">
-              <span class="service-item__tag">DET 140+</span>
-              <span class="service-item__tag">Adaptive Practice</span>
-              <span class="service-item__tag">Speaking Drills</span>
+        
+        <form class="reveal space-y-5" onsubmit="handleSubmit(event)">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-xs text-slate-400 mb-2 block">FULL NAME</label>
+              <input type="text" required class="input-field w-full px-4 py-3 rounded-xl" placeholder="Your name">
+            </div>
+            <div>
+              <label class="text-xs text-slate-400 mb-2 block">PHONE</label>
+              <input type="tel" required class="input-field w-full px-4 py-3 rounded-xl" placeholder="+1 (555) 000-0000">
             </div>
           </div>
-        </div>
-      </article>
-
-      <article class="service-item reveal">
-        <div class="service-item__head">
-          <span class="service-item__num">03</span>
-          <div class="service-item__body">
-            <h4 class="service-item__title">SAT Coaching</h4>
-            <p class="service-item__desc">A ten-week programme built around the Digital SAT — covering both the Reading & Writing and Math modules. Our coaches train you on the BlueBook adaptive interface, time-management per module, and the question taxonomy that the College Board reuses cycle after cycle. Includes six full-length adaptive mocks.</p>
-            <div class="service-item__tags">
-              <span class="service-item__tag">Digital SAT</span>
-              <span class="service-item__tag">Reading & Writing</span>
-              <span class="service-item__tag">Math</span>
-              <span class="service-item__tag">Adaptive Mocks</span>
+          <div>
+            <label class="text-xs text-slate-400 mb-2 block">EMAIL ADDRESS</label>
+            <input type="email" required class="input-field w-full px-4 py-3 rounded-xl" placeholder="you@example.com">
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-xs text-slate-400 mb-2 block">COUNTRY OF INTEREST</label>
+              <select required class="input-field w-full px-4 py-3 rounded-xl">
+                <option value="">Select country</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Canada</option>
+                <option>Germany</option>
+                <option>Finland</option>
+                <option>Ireland</option>
+                <option>Italy</option>
+                <option>Hungary</option>
+                <option>Romania</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs text-slate-400 mb-2 block">SERVICE NEEDED</label>
+              <select required class="input-field w-full px-4 py-3 rounded-xl">
+                <option value="">Select service</option>
+                <option>Study Abroad Consultation</option>
+                <option>IELTS Coaching</option>
+                <option>DET Coaching</option>
+                <option>Application & SOP</option>
+                <option>Visa Guidance</option>
+                <option>Full Package</option>
+              </select>
             </div>
           </div>
-        </div>
-      </article>
-
-      <article class="service-item reveal">
-        <div class="service-item__head">
-          <span class="service-item__num">04</span>
-          <div class="service-item__body">
-            <h4 class="service-item__title">University Shortlisting & Strategy</h4>
-            <p class="service-item__desc">A data-driven shortlist of 8–12 universities across ambitious, target and safety tiers, mapped against your academic profile, budget, post-study work intentions and long-term residency goals. Each shortlist comes with a written rationale and three-year cohort outcome data.</p>
-            <div class="service-item__tags">
-              <span class="service-item__tag">Profile Evaluation</span>
-              <span class="service-item__tag">Tier Mapping</span>
-              <span class="service-item__tag">ROI Analysis</span>
-            </div>
+          <div>
+            <label class="text-xs text-slate-400 mb-2 block">MESSAGE</label>
+            <textarea rows="3" class="input-field w-full px-4 py-3 rounded-xl" placeholder="Tell us about your goals..."></textarea>
           </div>
-        </div>
-      </article>
-
-      <article class="service-item reveal">
-        <div class="service-item__head">
-          <span class="service-item__num">05</span>
-          <div class="service-item__body">
-            <h4 class="service-item__title">Application & SOP Craft</h4>
-            <p class="service-item__desc">A four-draft collaborative essay process led by a senior essay editor. We begin with a 90-minute narrative extraction interview, then shape your statement of purpose, personal statement, diversity statement and LOR briefs into a single, coherent application voice.</p>
-            <div class="service-item__tags">
-              <span class="service-item__tag">SOP</span>
-              <span class="service-item__tag">Personal Statement</span>
-              <span class="service-item__tag">LOR Briefs</span>
-              <span class="service-item__tag">Scholarship Essays</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="service-item reveal">
-        <div class="service-item__head">
-          <span class="service-item__num">06</span>
-          <div class="service-item__body">
-            <h4 class="service-item__title">Visa Documentation & Mock Interview</h4>
-            <p class="service-item__desc">End-to-end visa filing for F-1, Tier 4, SDS, Schengen and EU study visas — including financial documentation review, sponsor affidavits, GTE essays and two rounds of consulate-style mock interviews calibrated to the specific country's interview patterns.</p>
-            <div class="service-item__tags">
-              <span class="service-item__tag">F-1 USA</span>
-              <span class="service-item__tag">Tier 4 UK</span>
-              <span class="service-item__tag">SDS Canada</span>
-              <span class="service-item__tag">Schengen</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="service-item reveal">
-        <div class="service-item__head">
-          <span class="service-item__num">07</span>
-          <div class="service-item__body">
-            <h4 class="service-item__title">Scholarship & Funding Strategy</h4>
-            <p class="service-item__desc">A dedicated scholarship cell tracks 600+ institutional, governmental and third-party funding instruments — including Chevening, DAAD, Erasmus Mundus, Fulbright and university-specific merit awards. Average client secures funding worth 18% of annual tuition.</p>
-            <div class="service-item__tags">
-              <span class="service-item__tag">Chevening</span>
-              <span class="service-item__tag">DAAD</span>
-              <span class="service-item__tag">Fulbright</span>
-              <span class="service-item__tag">Erasmus Mundus</span>
-            </div>
-          </div>
-        </div>
-      </article>
+          <button type="submit" class="btn-primary w-full py-4 rounded-xl font-semibold text-base">
+            <span>Send My Inquiry <i class="fas fa-paper-plane ml-2"></i></span>
+          </button>
+          <p class="text-xs text-slate-500 text-center">We respond within 24 hours. Your data is safe with us.</p>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Process ===== -->
-<section class="section process" id="process">
-  <div class="process__head">
-    <div class="eyebrow reveal">The Stellar Process</div>
-    <h2 class="h2 reveal reveal--d1">Eight deliberate steps, <em>zero guesswork.</em></h2>
-    <p class="reveal reveal--d2">From the first discovery call to your first week on campus, every milestone is documented, owned and reviewed. Below is the exact sequence your engagement will follow — no surprises, no missed deadlines.</p>
-  </div>
-
-  <div class="process__grid">
-    <div class="process-step reveal">
-      <div class="process-step__num">01</div>
-      <h3 class="process-step__title">Discovery Call</h3>
-      <p class="process-step__desc">A 45-minute video consultation to understand your academic background, target countries, budget and post-study ambitions. Free of charge, no obligation.</p>
-    </div>
-    <div class="process-step reveal reveal--d1">
-      <div class="process-step__num">02</div>
-      <h3 class="process-step__title">Profile Evaluation</h3>
-      <p class="process-step__desc">A written audit of your transcripts, test scores, work experience and extracurriculars — benchmarked against the most recent three admission cycles.</p>
-    </div>
-    <div class="process-step reveal reveal--d2">
-      <div class="process-step__num">03</div>
-      <h3 class="process-step__title">University Shortlist</h3>
-      <p class="process-step__desc">A tiered shortlist of 8–12 universities with cohort outcome data, programme fit analysis and a 20-page written rationale delivered within seven working days.</p>
-    </div>
-    <div class="process-step reveal reveal--d3">
-      <div class="process-step__num">04</div>
-      <h3 class="process-step__title">Test Preparation</h3>
-      <p class="process-step__desc">Begin IELTS, DET or SAT coaching with your dedicated mentor. Fortnightly mocks, weakness-mapping and guaranteed score improvement.</p>
-    </div>
-    <div class="process-step reveal">
-      <div class="process-step__num">05</div>
-      <h3 class="process-step__title">Application Craft</h3>
-      <p class="process-step__desc">Four collaborative essay drafts, LOR briefs, resume rewriting and university-specific supplemental essays — reviewed by a senior essay editor.</p>
-    </div>
-    <div class="process-step reveal reveal--d1">
-      <div class="process-step__num">06</div>
-      <h3 class="process-step__title">Submission & Interview</h3>
-      <p class="process-step__desc">We file every application on your behalf, track acknowledgements and prepare you for any programme-specific interview with two rounds of mocks.</p>
-    </div>
-    <div class="process-step reveal reveal--d2">
-      <div class="process-step__num">07</div>
-      <h3 class="process-step__title">Visa Documentation</h3>
-      <p class="process-step__desc">Complete visa filing with financial documentation review, sponsor affidavits and consulate-style mock interviews calibrated to your destination.</p>
-    </div>
-    <div class="process-step reveal reveal--d3">
-      <div class="process-step__num">08</div>
-      <h3 class="process-step__title">Pre-Departure Briefing</h3>
-      <p class="process-step__desc">A final two-hour briefing covering accommodation, banking, SIM, healthcare registration and an introduction to your destination city's student community.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Stats ===== -->
-<section class="stats">
-  <div class="stats__grid">
-    <div class="stat reveal">
-      <div class="stat__num">9</div>
-      <div class="stat__label">Destination<br>Countries Served</div>
-    </div>
-    <div class="stat reveal reveal--d1">
-      <div class="stat__num">1,200+</div>
-      <div class="stat__label">University Offers<br>Secured Since 2015</div>
-    </div>
-    <div class="stat reveal reveal--d2">
-      <div class="stat__num">92%</div>
-      <div class="stat__label">Students Scoring<br>Top Band on First Attempt</div>
-    </div>
-    <div class="stat reveal reveal--d3">
-      <div class="stat__num">1 : 1</div>
-      <div class="stat__label">Dedicated Mentor<br>Per Applicant</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Testimonials ===== -->
-<section class="section testimonials" id="testimonials">
-  <div class="testimonials__head">
-    <div class="eyebrow reveal">Student Voices</div>
-    <h2 class="h2 reveal reveal--d1">Quiet confirmations <em>from those</em> who walked the path.</h2>
-    <p class="reveal reveal--d2">A selection of notes from students we have placed over the past three admission cycles. Names are abbreviated for privacy; programme and university are verified.</p>
-  </div>
-
-  <div class="testimonials__grid">
-    <article class="testimonial reveal">
-      <div class="testimonial__quote-mark">"</div>
-      <p class="testimonial__quote">Stellar rewrites the script on what a study abroad consultancy can be. My IELTS coach diagnosed a writing weakness in week one that two previous institutes had missed entirely. I scored an 8.0 in eight weeks.</p>
-      <div class="testimonial__author">
-        <div class="testimonial__avatar">A</div>
-        <div>
-          <div class="testimonial__name">Anika Rahman</div>
-          <div class="testimonial__dest">MSc Computer Science · University of Edinburgh</div>
+<!-- Footer -->
+<footer class="relative py-16 border-t border-purple-500/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center font-display font-bold text-white text-lg relative overflow-hidden">
+            <span class="relative z-10">S</span>
+            <div class="absolute top-1 right-1 w-1.5 h-1.5 bg-yellow-400 rounded-full"></div>
+          </div>
+          <div>
+            <div class="font-display text-xl font-bold">Stellar</div>
+            <div class="text-[10px] tracking-[0.2em] text-purple-300 uppercase">Study Abroad</div>
+          </div>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed">Premium study abroad consultation and test prep, guiding ambitious students to world-class universities since 2014.</p>
+        <div class="flex gap-3 mt-6">
+          <a href="#" class="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-white transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-white transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-white transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-white transition" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-    </article>
-
-    <article class="testimonial reveal reveal--d1">
-      <div class="testimonial__quote-mark">"</div>
-      <p class="testimonial__quote">The shortlist process was the most rigorous thing I have experienced. Twelve universities, each with a four-page rationale, ROI analysis and three-year placement data. I felt I was making an informed decision for the first time.</p>
-      <div class="testimonial__author">
-        <div class="testimonial__avatar">T</div>
-        <div>
-          <div class="testimonial__name">Tahmid Hasan</div>
-          <div class="testimonial__dest">MS Data Science · Northeastern University, Boston</div>
-        </div>
+      
+      <div>
+        <div class="text-xs tracking-[0.2em] text-slate-500 mb-4">SERVICES</div>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#services" class="text-slate-400 hover:text-white">Study Abroad Consultation</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white">IELTS Coaching</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white">DET Coaching</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white">Application & SOP</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white">Visa Guidance</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white">Scholarship Support</a></li>
+        </ul>
       </div>
-    </article>
-
-    <article class="testimonial reveal reveal--d2">
-      <div class="testimonial__quote-mark">"</div>
-      <p class="testimonial__quote">The SAT coaching was surgical. My mentor broke down every question type on the Digital SAT, gave me daily adaptive practice sets and within ten weeks my math score climbed 180 points. Worth every taka.</p>
-      <div class="testimonial__author">
-        <div class="testimonial__avatar">N</div>
-        <div>
-          <div class="testimonial__name">Nusrat Jahan</div>
-          <div class="testimonial__dest">BSc Economics · University of Toronto</div>
-        </div>
+      
+      <div>
+        <div class="text-xs tracking-[0.2em] text-slate-500 mb-4">DESTINATIONS</div>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#destinations" class="text-slate-400 hover:text-white">Study in USA</a></li>
+          <li><a href="#destinations" class="text-slate-400 hover:text-white">Study in UK</a></li>
+          <li><a href="#destinations" class="text-slate-400 hover:text-white">Study in Canada</a></li>
+          <li><a href="#destinations" class="text-slate-400 hover:text-white">Study in Germany</a></li>
+          <li><a href="#destinations" class="text-slate-400 hover:text-white">Study in Finland</a></li>
+          <li><a href="#destinations" class="text-slate-400 hover:text-white">Study in Ireland</a></li>
+        </ul>
       </div>
-    </article>
-
-    <article class="testimonial reveal reveal--d3">
-      <div class="testimonial__quote-mark">"</div>
-      <p class="testimonial__quote">From SOP draft one to my F-1 visa mock, the team knew my story better than I did. The visa officer asked three questions that we had rehearsed verbatim the previous week. I walked out with an approval.</p>
-      <div class="testimonial__author">
-        <div class="testimonial__avatar">R</div>
-        <div>
-          <div class="testimonial__name">Rafi Ahmed</div>
-          <div class="testimonial__dest">MSc Mechanical Engineering · TU Munich</div>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ===== CTA ===== -->
-<section class="cta" id="contact">
-  <div class="cta__bg-text">Begin</div>
-  <div class="cta__content">
-    <div class="cta__stars">✦ ✦ ✦ ✦ ✦</div>
-    <h2 class="cta__title">Begin your journey <em>with Stellar.</em></h2>
-    <p class="cta__sub">Book a complimentary 45-minute discovery call with a senior consultant. We will evaluate your profile, outline a target-country strategy and answer every question you bring — no obligation, no sales pressure.</p>
-    <div class="cta__actions">
-      <a href="mailto:skillconnectg@gmail.com" class="btn btn--primary">Book Discovery Call<span class="btn__arrow">→</span></a>
-      <a href="https://wa.me/8801332995039" class="btn btn--ghost">WhatsApp Us<span class="btn__arrow">↗</span></a>
-    </div>
-    <div class="cta__contact">
-      <span>Email · <a href="mailto:skillconnectg@gmail.com">skillconnectg@gmail.com</a></span>
-      <span>Phone · <a href="tel:+8801332995039">+880 1332 995039 </a></span>
-      <span>Hours · Sun–Thu · 10:00–19:00 BST</span>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Footer ===== -->
-<footer class="footer">
-  <div class="footer__top">
-    <div class="footer__brand-block">
-      <div class="footer__brand">
-        <img src="https://z-cdn-media.chatglm.cn/files/f32b3c26-3b0e-4d63-b59d-83be874cbc29.png?auth_key=1881892021-16675db856ca4989bd5104b98820127d-0-1178ee9c1e43b52fcc63d790189cf38c" alt="Stellar Study Abroad logo">
-        <div class="footer__brand-text">
-          <span class="footer__brand-name">Stellar</span>
-          <span class="footer__brand-sub">Study Abroad</span>
-        </div>
-      </div>
-      <p class="footer__tagline">A boutique international education studio. IELTS, DET & SAT coaching, university shortlisting, application craft and visa documentation across nine destinations.</p>
-      <div class="footer__social">
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="https://www.facebook.com/StellarStudyAbroad" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="YouTube">YT</a>
-        <a href="#" aria-label="WhatsApp">WA</a>
+      
+      <div>
+        <div class="text-xs tracking-[0.2em] text-slate-500 mb-4">NEWSLETTER</div>
+        <p class="text-sm text-slate-400 mb-4">Get the latest scholarship and intake updates delivered monthly.</p>
+        <form onsubmit="event.preventDefault(); showToast('Subscribed successfully!')" class="flex gap-2">
+          <input type="email" required placeholder="Email address" class="input-field flex-1 px-4 py-2.5 rounded-lg text-sm">
+          <button class="btn-primary px-4 rounded-lg" aria-label="Subscribe"><span><i class="fas fa-arrow-right"></i></span></button>
+        </form>
       </div>
     </div>
-    <div class="footer__col">
-      <h4>Destinations</h4>
-      <ul>
-        <li><a href="#destinations">United States</a></li>
-        <li><a href="#destinations">United Kingdom</a></li>
-        <li><a href="#destinations">Canada</a></li>
-        <li><a href="#destinations">Germany</a></li>
-        <li><a href="#destinations">Finland</a></li>
-        <li><a href="#destinations">Ireland</a></li>
-      </ul>
+    
+    <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div>© 2026 Stellar Study Abroad. All rights reserved.</div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms of Service</a>
+        <a href="#" class="hover:text-white">Cookie Policy</a>
+      </div>
     </div>
-    <div class="footer__col">
-      <h4>Coaching</h4>
-      <ul>
-        <li><a href="#coaching">IELTS Academic</a></li>
-        <li><a href="#coaching">Duolingo English Test</a></li>
-        <li><a href="#coaching">SAT Coaching</a></li>
-        <li><a href="#coaching">University Shortlisting</a></li>
-        <li><a href="#coaching">SOP & Essay Craft</a></li>
-        <li><a href="#coaching">Visa Documentation</a></li>
-      </ul>
-    </div>
-    <div class="footer__col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="#top">About Stellar</a></li>
-        <li><a href="#process">The Process</a></li>
-        <li><a href="#testimonials">Student Voices</a></li>
-        <li><a href="#contact">Book Consultation</a></li>
-        <li><a href="#contact">Press & Media</a></li>
-        <li><a href="#contact">Careers</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <span>© 2026 Stellar Study Abroad. All rights reserved.</span>
-    <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Cookie Policy</a></span>
   </div>
 </footer>
 
-<!-- ===== WhatsApp Float ===== -->
-<a href="https://wa.me/8801332995039" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.03 14.69 2 12.04 2zM12 20.15c-1.56 0-3.07-.41-4.39-1.19l-.31-.19-3.25.85.87-3.16-.2-.32a8.21 8.21 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.83c0 4.55-3.7 8.25-8.25 8.25zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14 0-.31-.02-.47-.02-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
-  <span>Chat with us</span>
-</a>
+<!-- Toast -->
+<div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full glass text-sm opacity-0 transition-all duration-300 pointer-events-none z-50">
+  Message sent successfully!
+</div>
 
 <script>
-(function(){
-  'use strict';
+// Starfield canvas
+const canvas = document.getElementById('starfield');
+const ctx = canvas.getContext('2d');
+let stars = [];
+let shootingStars = [];
 
-  // ===== Loader dismissal (triple failsafe) =====
-  function dismissLoader(){
-    var l = document.getElementById('loader');
-    if (l) l.classList.add('is-out');
-  }
-  if (document.readyState === 'complete') {
-    setTimeout(dismissLoader, 400);
-  } else {
-    window.addEventListener('load', function(){ setTimeout(dismissLoader, 400); });
-  }
-  setTimeout(dismissLoader, 3000);
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  initStars();
+}
 
-  var prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // ===== Lenis smooth scroll =====
-  var lenis = null;
-  if (!prefersReduce && typeof Lenis !== 'undefined') {
-    try {
-      lenis = new Lenis({
-        duration: 1.15,
-        easing: function(t){ return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
-        smoothWheel: true,
-        smoothTouch: false
-      });
-      function raf(time){ lenis.raf(time); requestAnimationFrame(raf); }
-      requestAnimationFrame(raf);
-    } catch(e){ console.warn('Lenis init failed:', e); }
-  }
-
-  // ===== GSAP + ScrollTrigger =====
-  var hasGSAP = (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined');
-  if (hasGSAP) {
-    gsap.registerPlugin(ScrollTrigger);
-    if (lenis) { lenis.on('scroll', ScrollTrigger.update); }
-  }
-
-  // ===== Hero 3-layer parallax =====
-  if (hasGSAP && !prefersReduce) {
-    var heroBigText = document.getElementById('heroBigText');
-    var heroPortrait = document.getElementById('heroPortrait');
-    ScrollTrigger.create({
-      trigger: '.hero',
-      start: 'top top',
-      end: 'bottom top',
-      scrub: 1,
-      onUpdate: function(s){
-        var p = s.progress;
-        if (heroBigText) gsap.set(heroBigText, { yPercent: p * 50 });
-        if (heroPortrait) gsap.set(heroPortrait, { yPercent: -50 + (p * 20) });
-      }
+function initStars() {
+  stars = [];
+  const count = Math.floor((canvas.width * canvas.height) / 8000);
+  for (let i = 0; i < count; i++) {
+    stars.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.2 + 0.2,
+      twinkle: Math.random() * Math.PI * 2,
+      speed: Math.random() * 0.02 + 0.005,
+      color: Math.random() > 0.85 ? 'gold' : 'white'
     });
   }
+}
 
-  // ===== Nav scroll state & WA float visibility =====
-  var nav = document.getElementById('nav');
-  var waFloat = document.getElementById('waFloat');
-  function onScroll(){
-    if (window.scrollY > 60) nav.classList.add('is-scrolled');
-    else nav.classList.remove('is-scrolled');
-    if (waFloat) {
-      if (window.scrollY > 300) waFloat.classList.add('is-visible');
-      else waFloat.classList.remove('is-visible');
+function spawnShootingStar() {
+  if (Math.random() > 0.997) {
+    shootingStars.push({
+      x: Math.random() * canvas.width * 0.5,
+      y: Math.random() * canvas.height * 0.5,
+      len: Math.random() * 80 + 60,
+      speed: Math.random() * 8 + 6,
+      angle: Math.PI / 4,
+      opacity: 1
+    });
+  }
+}
+
+function drawStars() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+  const gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 0, canvas.width / 2, canvas.height / 2, Math.max(canvas.width, canvas.height));
+  gradient.addColorStop(0, 'rgba(13, 18, 51, 0.4)');
+  gradient.addColorStop(1, 'rgba(6, 8, 24, 0)');
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+  stars.forEach(s => {
+    s.twinkle += s.speed;
+    const alpha = (Math.sin(s.twinkle) + 1) / 2 * 0.7 + 0.3;
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, Math.max(0.1, s.r), 0, Math.PI * 2);
+    if (s.color === 'gold') {
+      ctx.fillStyle = `rgba(251, 191, 36, ${alpha})`;
+    } else {
+      ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
     }
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  // ===== Manifesto line-mask rise =====
-  var manifesto = document.getElementById('manifesto');
-  if (manifesto) {
-    var inners = manifesto.querySelectorAll('.inner');
-    inners.forEach(function(el, i){ el.style.setProperty('--i', i); });
-  }
-
-  // ===== Generic IntersectionObserver reveals =====
-  var revealEls = document.querySelectorAll('.reveal, .eyebrow, .manifesto__text');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting) {
-          e.target.classList.add('is-in');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
-    revealEls.forEach(function(el){ io.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('is-in'); });
-  }
-
-  // ===== Country card directional clip reveal (GSAP-driven, failsafe visible) =====
-  var cards = document.querySelectorAll('.country-card');
-  var dirs = [
-    'inset(0 100% 0 0)',
-    'inset(0 0 100% 0)',
-    'inset(0 0 0 100%)',
-    'inset(100% 0 0 0)'
-  ];
-
-  if (hasGSAP && !prefersReduce) {
-    cards.forEach(function(card, i){
-      gsap.set(card, { opacity: 0, clipPath: dirs[i % dirs.length] });
-      ScrollTrigger.create({
-        trigger: card,
-        start: 'top 88%',
-        once: true,
-        onEnter: function(){
-          gsap.to(card, {
-            opacity: 1,
-            clipPath: 'inset(0% 0% 0% 0%)',
-            duration: 1.2,
-            ease: 'power3.inOut',
-            delay: (i % 3) * 0.1
-          });
-        }
-      });
-    });
-  }
-
-  // ===== Smooth anchor scroll via Lenis =====
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(ev){
-      var href = a.getAttribute('href');
-      if (href === '#' || href.length < 2) return;
-      var target = document.querySelector(href);
-      if (!target) return;
-      ev.preventDefault();
-      if (lenis) {
-        lenis.scrollTo(target, { offset: -80, duration: 1.2 });
-      } else {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
+    ctx.fill();
   });
+  
+  spawnShootingStar();
+  shootingStars = shootingStars.filter(ss => {
+    ctx.save();
+    ctx.translate(ss.x, ss.y);
+    ctx.rotate(ss.angle);
+    const grad = ctx.createLinearGradient(0, 0, -ss.len, 0);
+    grad.addColorStop(0, `rgba(251, 191, 36, ${ss.opacity})`);
+    grad.addColorStop(1, 'rgba(251, 191, 36, 0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(-ss.len, -1, ss.len, 2);
+    ctx.restore();
+    
+    ss.x += ss.speed * Math.cos(ss.angle);
+    ss.y += ss.speed * Math.sin(ss.angle);
+    ss.opacity -= 0.01;
+    return ss.opacity > 0 && ss.x < canvas.width + 100 && ss.y < canvas.height + 100;
+  });
+  
+  requestAnimationFrame(drawStars);
+}
 
-  // ===== Refresh ScrollTrigger after fonts load =====
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(function(){
-      if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
-    });
-  }
+resize();
+drawStars();
+window.addEventListener('resize', resize);
 
-})();
+// Nav scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+});
+
+// Mobile menu
+const menuBtn = document.getElementById('menuBtn');
+const closeMenu = document.getElementById('closeMenu');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+document.querySelectorAll('#mobileMenu a').forEach(a => {
+  a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+});
+
+// Reveal on scroll
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => io.observe(el));
+
+// Counter animation
+const counters = document.querySelectorAll('.counter');
+const counterIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const target = +e.target.dataset.target;
+      let current = 0;
+      const step = target / 60;
+      const update = () => {
+        current += step;
+        if (current < target) {
+          e.target.textContent = Math.floor(current);
+          requestAnimationFrame(update);
+        } else {
+          e.target.textContent = target;
+        }
+      };
+      update();
+      counterIO.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => counterIO.observe(c));
+
+// FAQ accordion
+document.querySelectorAll('.faq-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+// Toast
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.style.opacity = '1';
+  toast.style.transform = 'translate(-50%, -10px)';
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translate(-50%, 0)';
+  }, 3000);
+}
+
+// Form
+function handleSubmit(e) {
+  e.preventDefault();
+  e.target.reset();
+  showToast('Inquiry sent! Our team will reach out within 24 hours.');
+}
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
 </script>
-
 </body>
 </html>
